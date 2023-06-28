@@ -1,0 +1,26 @@
+*{
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/2.png);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    background-color: #10576b;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}

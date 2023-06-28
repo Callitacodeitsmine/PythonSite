@@ -1,0 +1,11 @@
+{% extends 'base.html'%} {% block blogContent %} {% load static %}
+
+<link rel="stylesheet" href="{% static 'blog.css' %}" />
+<h1 class="h1a">{{ post.title }}</h1>
+  <h2 class="h2a">Presented By: {{ post.author }}</h2>
+  <p class="box">{{ post.body }}...</p>
+
+  {% if request.user.username == post.author_id %}
+  <h4 class="h4a"><a href="{% url 'editBlog' post.pk %}"><p class = "btn">Edit<p></a></h4>
+  <h4 class="h4a"><a href="{% url 'deleteBlog' post.pk %}">Delete</a></h4>
+{% endif %} {% endblock blogContent %}
